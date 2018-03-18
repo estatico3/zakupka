@@ -6,6 +6,14 @@
     tools:context=".LoginActivity">
 
     <Button
+        android:id="@+id/orders_button"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/orders" />
+
+    <Button
         android:id="@+id/continue_button"
         style="@style/Button"
         android:layout_marginTop="16dp"
