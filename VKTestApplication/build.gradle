@@ -36,8 +36,15 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/Retrofit/json-simple-1.1.1.jar')
+
+    implementation files('libs/Retrofit/converter-gson-2.0.0-beta2.jar')
+    implementation files('libs/Retrofit/picasso-2.3.4.jar')
+    implementation("com.squareup.retrofit2:converter-gson:2.3.0")
+
+    implementation 'com.android.support:appcompat-v7:25.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    compile 'com.vk:androidsdk:1.6.9'
-    compile project(':vksdk_library')
+    implementation project(':vksdk_library')
+    //implementation 'com.squareup.picasso:picasso:2.71828'
 }

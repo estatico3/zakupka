@@ -140,7 +140,7 @@ public class LoginActivity extends FragmentActivity {
             @Override
             public void onResult(final VKAccessToken res) {
                 // User passed Authorization
-                startTestActivity();
+                startOrderListActivity();
                 new AsyncTask<Void, String, String>() {
                     @Override
                     protected String doInBackground(Void... voids) {
@@ -179,6 +179,9 @@ public class LoginActivity extends FragmentActivity {
 
     private void startTestActivity() {
         startActivity(new Intent(this, TestActivity.class));
+    }
+    private void startOrderListActivity() {
+        startActivity(new Intent(this, OrderListActivity.class));
     }
 
     public static class LoginFragment extends android.support.v4.app.Fragment {

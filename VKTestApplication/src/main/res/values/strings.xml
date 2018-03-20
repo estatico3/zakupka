@@ -2,5 +2,8 @@
 <resources>
     <string name="app_name">МОЯ ЗАКУПКА</string>
     <string name="orders">Список закупок</string>
+    <string name="distwayTitle">Пункт выдачи :</string>
+    <string name="distway_but">Посмотреть</string>
+    <string name="payway_but">Посмотреть</string>
     <integer name="com_vk_sdk_AppId">6410650</integer>
 </resources>
